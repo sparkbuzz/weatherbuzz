@@ -1,7 +1,7 @@
 import {main} from './app/main';
 
-import './styles/normalize.css';
-import './styles/weather-icons.css';
+import 'normalize.css/normalize.css';
+import 'weather-icons/css/weather-icons.css';
 import './styles/styles.scss';
 
 console.log('Welcome to WeatherBuzz');
