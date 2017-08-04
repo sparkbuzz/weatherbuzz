@@ -1,4 +1,4 @@
-exports.doit = function () {
+exports.main = function () {
     if ('geolocation' in navigator) {
         /**
          * @type {{}}}

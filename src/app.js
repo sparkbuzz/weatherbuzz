@@ -1,8 +1,8 @@
-import {doit} from './app/main';
+import {main} from './app/main';
 
-import './scss/normalize.css';
-import './scss/weather-icons.css';
-import './scss/styles.css';
+import './styles/normalize.css';
+import './styles/weather-icons.css';
+import './styles/styles.scss';
 
 console.log('Welcome to WeatherBuzz');
-doit();
+main();

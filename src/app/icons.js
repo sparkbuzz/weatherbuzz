@@ -1,4 +1,4 @@
-let icons = {
+exports.icons = {
     200: {
         label: "thunderstorm with light rain",
         icon: "storm-showers"
