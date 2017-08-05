@@ -1,8 +1,8 @@
 module.exports = function (config) {
     config.set({
-        autoWatch: true,
+        autoWatch: false,
         basePath: './tests',
-        browsers: ['Chrome'],
+        browsers: ['Firefox'],
         colors: true,
         frameworks: ['jasmine'],
         files: [
@@ -15,7 +15,7 @@ module.exports = function (config) {
             '**/*.spec.js': ['webpack', 'sourcemap']
         },
         reporters: ['progress'],
-        singleRun: false,
+        singleRun: true,
         webpack: require('./webpack.config.js'),
         webpackMiddleware: {
             stats: 'errors-only'
