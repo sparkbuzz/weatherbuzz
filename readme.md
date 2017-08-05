@@ -2,6 +2,11 @@
 
 This is a very simple Weather application written in JavaScript/ES6
 
+## Demo site
+A demo is available on GitHub Pages at
+
+https://sparkbuzz.github.io/weatherbuzz/dist/
+
 ## Getting Started
 
 Clone the source code repository in a location of your liking. Install the dependencies with 
