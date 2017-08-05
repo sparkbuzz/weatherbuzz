@@ -4,9 +4,9 @@
   "description": "A simple app buzzing about the weather!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server ./dist",
-    "build": "webpack --watch"
+    "test": "karma start karma.config.js",
+    "serve": "live-server ./dist",
+    "watch": "webpack --watch"
   },
   "author": "Josef van Niekerk <josef.van.niekerk@gmail.com>",
   "license": "UNLICENSED",
@@ -16,6 +16,12 @@
     "babel-preset-es2015": "^6.24.1",
     "css-loader": "^0.28.4",
     "html-webpack-plugin": "^2.30.1",
+    "jasmine-core": "^2.7.0",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^2.0.4",
     "live-server": "^1.2.0",
     "node-sass": "^4.5.3",
     "normalize.css": "^7.0.0",
