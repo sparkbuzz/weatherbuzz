@@ -12,7 +12,7 @@ html, body {
 }
 
 body {
-    background: $secondary-color radial-gradient(ellipse at center, rgba(96, 108, 136, 1) 0%, rgba(63, 76, 107, 1) 100%);
+    background: $secondary-color radial-gradient(ellipse at center, rgb(96, 108, 136) 0%, rgb(63, 76, 107) 100%);
 }
 
 h1, h2 {
@@ -95,4 +95,3 @@ h1 {
         padding: 0.5rem;
     }
 }
-
