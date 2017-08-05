@@ -1,55 +1,68 @@
 # WeatherBuzz
 
-This is a very simple Weather application written in JavaScript/ES6
+[![Build Status](https://travis-ci.org/sparkbuzz/weatherbuzz.svg?branch=master)](https://travis-ci.org/sparkbuzz/weatherbuzz)
 
-## Demo site
+WeatherBuzz is a very simple Weather application written in JavaScript/ES6. It utilises the OpenWeatherMap API to 
+fetch weather data in the user's location. See more at 
+http://openweathermap.org/api
+
+## Demo Site
 A demo is available on GitHub Pages at
-
 https://sparkbuzz.github.io/weatherbuzz/dist/
 
 ## Getting Started
 
 Clone the source code repository in a location of your liking. Install the dependencies with 
 
-`yarn install --pure-lockfile`
+`$> yarn install --pure-lockfile`
  
-This way `yarn.lock` file will be utilized to ensure you have the correct or most 
-stable dependency versions installed.
+Using Yarn ensures the `yarn.lock` file will be utilised to ensure you have the correct or most stable dependency 
+versions installed. The installation also runs significantly faster than with NPM < v5.x.x 
 
-Alternatively, simply use NPM by running
+You can also install with NPM by running
 
-`npm install`
+`$> npm install`
 
-but there's no `npm-shrinkwrap.json`, so you would be on your own if dependencies fail.
+but there's no `npm-shrinkwrap.json`, so you're on your own if dependencies fail.
 
-## Building the source
+## Building the Source
 
-To build the source simply run
+WeatherBuzz uses WebPack 3 to perform builds. To build the source simply run
 
-`yarn build` or `npm run build`
+`$> yarn build` or `$> npm run build`
 
 to build the source in watch mode use
 
-`yarn watch`  or `npm run watch`
+`$> yarn watch`  or `$> npm run watch`
 
-## Hosting
+## Starting the Server
 
-Once built, you can serve the application by running 
+Once built, you can serve the application with BrowserSync over HTTPS by running 
 
-`yarn serve` or `npm run serve`
+`$> yarn serve` or `$> npm run serve`
 
 and visit `http://localhost:3000` in your browser. Do note the URL that BrowserSync outputs, it might be different from
-this document.
+what this document states.
 
-I recommend taking this for a spin in Chrome for now...
+I recommend taking the ap for a spin in Chrome for now, as no cross browser testing has been done yet due to the time 
+factor.
 
-## Testings
+## Testing the Project
 
-To run unit tests, simply run
+CI tests can be seen on Travis CI at 
+https://travis-ci.org/sparkbuzz/weatherbuzz
 
-`yarn test` or `npm run test`
+To run the unit test suite locally, simply run
 
-## Notes
+`$> yarn test` or `$> npm run test`
 
-The WebPack output bloated, so needs some optimization. This is primarily because the Weather Icons fonts are embedded 
-in the bundle, however, time is limited.
+Karma tests are executed in Firefox to make it easier to execute on Travis CI.
+
+## Future Improvements
+
+The generated WebPack bundle is bloated, so needs some optimization. This is primarily because the Weather Icons fonts 
+are embedded in the bundle, however, time is limited.
+
+The project doesn't include any code coverage, so would be a nice future addition.
+
+Not all the code is covered with tests, the idea is to simply demonstrate some general concepts.
