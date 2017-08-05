@@ -42,3 +42,9 @@ I recommend taking this for a spin in Chrome for now...
 To run unit tests, simply run
 
 `yarn test` or `npm run test`
+
+
+### Notes
+
+The WebPack output bloated, so needs some optimization. This is primarily because the Weather Icons fonts are embedded 
+in the bundle, however, time is limited.
