@@ -14,7 +14,7 @@ module.exports = function (config) {
         preprocessors: {
             '**/*.spec.js': ['webpack', 'sourcemap']
         },
-        reporters: ['progress'],
+        reporters: ['spec'],
         singleRun: true,
         webpack: require('./webpack.config.js'),
         webpackMiddleware: {
