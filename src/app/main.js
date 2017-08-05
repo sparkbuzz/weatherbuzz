@@ -28,13 +28,13 @@ exports.main = function () {
                     let target = document.querySelector('.forecast');
                     for (let fc of forecastData.list) {
                         let el = document.createElement('span');
-                        let d = toHour12(fc.dt_txt);
-                        let id = fc.weather[0].id;
+
                         el.innerHTML = `
-                            <span>${d}</span>
-                            <span class="${resolveIcon(id)}"></span>
+                            <span>${toHour12(fc.dt_txt)}</span>
+                            <span class="${resolveIcon(fc.weather[0].id)}"></span>
                             <span>${fc.main.temp}°C</span>
                         `;
+
                         target.appendChild(el);
                     }
                 });

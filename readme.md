@@ -33,7 +33,8 @@ Once built, you can serve the application by running
 
 `yarn serve` or `npm run serve`
 
-and visit `http://127.0.0.7:8080` in your browser.
+and visit `http://localhost:3000` in your browser. Do note the URL that BrowserSync outputs, it might be different from
+this document.
 
 I recommend taking this for a spin in Chrome for now...
 
@@ -43,8 +44,7 @@ To run unit tests, simply run
 
 `yarn test` or `npm run test`
 
-
-### Notes
+## Notes
 
 The WebPack output bloated, so needs some optimization. This is primarily because the Weather Icons fonts are embedded 
 in the bundle, however, time is limited.
