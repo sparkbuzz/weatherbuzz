@@ -4,8 +4,9 @@
   "description": "A simple app buzzing about the weather!",
   "main": "index.js",
   "scripts": {
-    "test": "karma start karma.config.js",
+    "build": "webpack",
     "serve": "live-server ./dist",
+    "test": "karma start karma.config.js",
     "watch": "webpack --watch"
   },
   "author": "Josef van Niekerk <josef.van.niekerk@gmail.com>",
