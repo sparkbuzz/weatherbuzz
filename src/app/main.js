@@ -1,5 +1,6 @@
 import {getForecast, getWeather} from './weather/api';
 import {resolveIcon} from './weather/utils';
+import {toHour12} from './time/utils';
 
 exports.main = function () {
     if ('geolocation' in navigator) {
@@ -27,10 +28,8 @@ exports.main = function () {
                     let target = document.querySelector('.forecast');
                     for (let fc of forecastData.list) {
                         let el = document.createElement('span');
-                        let d = fc.dt_txt;
+                        let d = toHour12(fc.dt_txt);
                         let id = fc.weather[0].id;
-                        d = parseInt(d.split(' ')[1].split(':')[0], 10);
-                        d = d > 12 ? (d - 12) + 'pm' : (d === 0 ? 12 + 'am' : d + 'pm');
                         el.innerHTML = `
                             <span>${d}</span>
                             <span class="${resolveIcon(id)}"></span>
