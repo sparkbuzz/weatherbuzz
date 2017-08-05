@@ -21,77 +21,80 @@ h1, h2 {
     text-align: center;
 }
 
-h1 {
-    font-size: 2rem;
+header {
+    height: 2rem;
 }
 
-.name {
-    text-align: center;
-    margin: 1.5rem 0 3rem 0;
+.location {
+    font-size: 5vh;
 }
 
-.weather {
-    margin-bottom: 1rem;
-    text-align: center;
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
 
-    .icon {
+    .name {
         text-align: center;
+        margin: 1.5rem 0 3rem 0;
     }
 
-    .wi {
-        color: whitesmoke;;
-        font-size: 6rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .description {
+    .weather {
+        margin-bottom: 1rem;
         text-align: center;
-    }
-}
 
-.detail {
-    text-align: center;
-    margin-bottom: 2.5em;
+        .wi {
+            color: whitesmoke;;
+            font-size: 15vh;
+            margin-bottom: 0.5rem;
+        }
 
-    > div {
-        margin-bottom: 0.25rem;
-    }
-
-    .temp {
-        font-size: 3.85em;
-        margin: 0.25em;
-    }
-
-}
-
-.forecast_title {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.forecast {
-    width: 100%;
-    overflow-x: scroll;
-    white-space: nowrap;
-
-    > span {
-        display: inline-block;
-        width: 3em;
-        font-size: 1rem;
-
-        > span {
-            &:first-child {
-                font-size: 1rem;
-            }
-
-            display: block;
-            font-size: 0.8rem;
+        .description {
             text-align: center;
         }
     }
 
-    .wi {
-        font-size: 1.1rem;
-        padding: 0.5rem;
+    .detail {
+        text-align: center;
+        margin-bottom: 2.5em;
+
+        > div {
+            margin-bottom: 0.25rem;
+        }
+
+        .temp {
+            font-size: 7vh;
+            margin: 0.25em;
+        }
+
+    }
+
+    .forecast {
+        width: 100%;
+        overflow-x: scroll;
+        white-space: nowrap;
+
+        > span {
+            display: inline-block;
+            width: 3em;
+            font-size: 1rem;
+
+            > span {
+                &:first-child {
+                    font-size: 1rem;
+                }
+
+                display: block;
+                font-size: 0.8rem;
+                text-align: center;
+            }
+        }
+
+        .wi {
+            font-size: 1.1rem;
+            padding: 0.5rem;
+        }
     }
 }
+
