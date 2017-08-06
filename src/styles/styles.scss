@@ -25,13 +25,20 @@ button {
 }
 
 .loader {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: -2rem;
+
+    height: 100%;
+    width: 100%;
+
     span {
         font-family: "Russo One", sans-serif;
-        position: absolute;
-        top: calc(50% - 1rem);
-        text-align: center;
-        width: 100%;
+    }
 
+    .pulsate {
         -webkit-animation: pulsate 1s ease-out;
         -webkit-animation-iteration-count: infinite;
         opacity: 0.5;
@@ -190,4 +197,3 @@ main {
         }
     }
 }
-

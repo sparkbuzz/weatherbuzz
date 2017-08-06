@@ -7,7 +7,10 @@ fetch weather data in the user's location. See more at
 http://openweathermap.org/api
 
 ## Demo Site
-A demo is available on GitHub Pages at
+Note that the project contains a `./dist` folder. This is intentional to allow serving the latest build by using GitHub
+Pages.
+
+The online demo is available on GitHub Pages at
 https://sparkbuzz.github.io/weatherbuzz/dist/
 
 ## Getting Started

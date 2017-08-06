@@ -1213,15 +1213,20 @@ button {
   color: slategray;
   font-family: "Economica", sans-serif; }
 
-.loader span {
-  font-family: "Russo One", sans-serif;
-  position: absolute;
-  top: calc(50% - 1rem);
+.loader {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  width: 100%;
-  -webkit-animation: pulsate 1s ease-out;
-  -webkit-animation-iteration-count: infinite;
-  opacity: 0.5; }
+  justify-content: center;
+  margin-top: -2rem;
+  height: 100%;
+  width: 100%; }
+  .loader span {
+    font-family: "Russo One", sans-serif; }
+  .loader .pulsate {
+    -webkit-animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.5; }
 
 .hidden {
   display: none; }
