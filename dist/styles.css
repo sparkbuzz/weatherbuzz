@@ -1187,6 +1187,14 @@ wi-wind-default._345-deg {
 .wi-moon-waning-crescent-6:before {
   content: "\F0B0";
 }
+@-webkit-keyframes pulsate {
+  0% {
+    opacity: 0.5; }
+  50% {
+    opacity: 1.0; }
+  100% {
+    opacity: 0.5; } }
+
 * {
   color: whitesmoke;
   font-family: 'Economica', sans-serif;
@@ -1197,6 +1205,26 @@ html, body {
 
 body {
   background: slategray radial-gradient(ellipse at center, #606c88 0%, #3f4c6b 100%); }
+
+button {
+  background: whitesmoke;
+  border: none;
+  border-radius: 0.2rem;
+  color: slategray;
+  font-family: "Economica", sans-serif; }
+
+.loader span {
+  font-family: "Russo One", sans-serif;
+  position: absolute;
+  top: calc(50% - 1rem);
+  text-align: center;
+  width: 100%;
+  -webkit-animation: pulsate 1s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.5; }
+
+.hidden {
+  display: none; }
 
 main {
   display: flex;
@@ -1257,5 +1285,33 @@ main {
 @media (max-height: 540px) {
   .forecast {
     display: none; } }
+
+@media (min-width: 600px) and (orientation: landscape) {
+  main {
+    width: 50%; }
+    main .detail {
+      margin-bottom: 5rem; }
+    main .forecast {
+      border-left: 1px dashed rgba(245, 245, 245, 0.3);
+      padding-top: 1rem;
+      position: absolute;
+      white-space: normal;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 50%; }
+      main .forecast > span {
+        display: block;
+        margin-left: 1rem;
+        width: 100%;
+        text-align: center; }
+        main .forecast > span span {
+          display: inline-block; }
+        main .forecast > span span.hour {
+          font-size: 2rem; }
+        main .forecast > span span.wi {
+          font-size: 2rem; }
+        main .forecast > span span.temp {
+          font-size: 2rem; } }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZXMuY3NzIiwic291cmNlUm9vdCI6IiJ9*/
