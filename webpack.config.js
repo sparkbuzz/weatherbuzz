@@ -1,12 +1,13 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     devtool: 'inline-source-map',
     entry: './src/app.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: 'app.js'
     },
     module: {
         rules: [
@@ -16,11 +17,14 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader']
+                use: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: 'css-loader'
+                })
             },
             {
                 test: /\.scss$/,
-                use: ['style-loader', 'css-loader', 'sass-loader']
+                use: ExtractTextPlugin.extract([ 'css-loader', 'sass-loader' ])
             },
             {
                 test: /\.js$/,
@@ -35,6 +39,7 @@ module.exports = {
         ]
     },
     plugins: [
+        new ExtractTextPlugin('styles.css'),
         new HTMLWebpackPlugin({
             template: 'src/index.html'
         })
