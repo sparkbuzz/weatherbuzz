@@ -6,17 +6,18 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WeatherBuzz</title>
-</head>
+<link href="styles.css" rel="stylesheet"></head>
 <body>
 <div class="loader"></div>
 <main>
     <header>
-        <h2>WeatherBuzz</h2>
+        <h1 class="app_title">WeatherBuzz</h1>
+        <h2 class="location"></h2>
     </header>
-    <h1 class="location"></h1>
     <div class="weather">
-        <div class="wi"></div>
-        <div class="description"></div>
+        <div class="wi">
+            <div class="description"></div>
+        </div>
     </div>
     <div class="detail">
         <div class="temp"></div>
@@ -26,5 +27,5 @@
     </div>
     <div class="forecast"></div>
 </main>
-<script type="text/javascript" src="bundle.js"></script></body>
+<script type="text/javascript" src="app.js"></script></body>
 </html>
