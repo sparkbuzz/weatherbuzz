@@ -1244,13 +1244,16 @@ main {
       text-shadow: 0 1px 0 rgba(245, 245, 245, 0.15); }
     main header .location {
       font-size: 2rem; }
+    main header p {
+      margin-top: 0.5rem;
+      margin-bottom: 3rem; }
   main .name {
     text-align: center;
     margin: 1.5rem 0 3rem 0; }
   main .weather {
     text-align: center; }
     main .weather .wi:before {
-      font-size: 18vh; }
+      font-size: 15vh; }
     main .weather .wi .description {
       margin-top: 1rem;
       font-size: 1.5rem;
